@@ -1,0 +1,19 @@
+{
+  "id": "V02",
+  "executor": "pf07_prompt_only",
+  "request": "@Prompt Fixer grąžink tik galutinį promptą be paaiškinimų ar palyginimo: noriu vidinio pardavimų įrankio sau, techninius sprendimus pasirink pats.",
+  "opened_resources": [
+    "skills/prompt-fixer/SKILL.md"
+  ],
+  "response": "Sukurk man vidinį pardavimų įrankį, skirtą mano kasdieniam darbui. Pirmiausia išsiaiškink mano pardavimų eigą, svarbiausią problemą ir turimus duomenų šaltinius. Užduok tik tuos klausimus, kurių atsakymai reikšmingai pakeistų įrankio paskirtį, funkcijas ar naudojimą. Funkcijas grįsk mano realiais poreikiais.\n\nTechninius sprendimus pasirink pats: architektūrą, technologijas, duomenų saugojimą ir paleidimo būdą. Atsižvelk į patikimumą, naudojimo paprastumą, priežiūrą ir bendrą kainą. Reikšmingus pasirinkimus trumpai paaiškink suprantama kalba.\n\nKai paskirtis ir būtina apimtis aiškios, įgyvendink veikiantį įrankį. Pradėk nuo visos pagrindinės darbo eigos ir tęsk iki sutartos apimties užbaigimo.\n\nDarbą laikyk baigtu, kai galiu atlikti sutartą pardavimų darbo eigą nuo pradžios iki pabaigos, duomenys išsaugomi, o kritiniai veiksmai patikrinti. Pateik tikslų paleidimo ir naudojimo aprašymą bei aiškiai įvardyk, kas liko nepatikrinta ar priklauso nuo mano prieigos.",
+  "review": {
+    "passed": true,
+    "basis": "User's explicit prompt-only control overrides the comparison; no status/wrapper, no execution."
+  },
+  "version": "0.7.0",
+  "fresh_context": true,
+  "date": "2026-11-21",
+  "model": "inherited host model; exact identifier not surfaced",
+  "evaluation": "Parent review of actual output; expected answers and rubric withheld from executors",
+  "limits": "One response in a fresh context; not human validation or measured cost/outcome improvement"
+}

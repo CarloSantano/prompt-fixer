@@ -1,0 +1,11 @@
+{
+  "variant": "baseline",
+  "task": "ingest",
+  "tests_run": 15,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "details": "test_distinct_messages_same_tenant (__main__.IngestContract.test_distinct_messages_same_tenant) ... ok\ntest_duplicate_preserves_existing_record (__main__.IngestContract.test_duplicate_preserves_existing_record) ... ok\ntest_duplicate_result_not_aliased_to_input (__main__.IngestContract.test_duplicate_result_not_aliased_to_input) ... ok\ntest_event_is_unchanged_and_unknown_fields_ignored (__main__.IngestContract.test_event_is_unchanged_and_unknown_fields_ignored) ... ok\ntest_failed_validation_does_not_change_inputs (__main__.IngestContract.test_failed_validation_does_not_change_inputs) ... ok\ntest_ids_preserve_case_and_unicode (__main__.IngestContract.test_ids_preserve_case_and_unicode) ... ok\ntest_input_store_not_mutated (__main__.IngestContract.test_input_store_not_mutated) ... ok\ntest_missing_required_fields (__main__.IngestContract.test_missing_required_fields) ... ok\ntest_missing_subject_default (__main__.IngestContract.test_missing_subject_default) ... ok\ntest_nested_existing_data_not_aliased (__main__.IngestContract.test_nested_existing_data_not_aliased) ... ok\ntest_new_record_and_result (__main__.IngestContract.test_new_record_and_result) ... ok\ntest_no_function_stdout (__main__.IngestContract.test_no_function_stdout) ... ok\ntest_nonblank_ids (__main__.IngestContract.test_nonblank_ids) ... ok\ntest_nonstring_ids (__main__.IngestContract.test_nonstring_ids) ... ok\ntest_same_message_different_tenants (__main__.IngestContract.test_same_message_different_tenants) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.001s\n\nOK\n",
+  "solution_sha256": "d8628687b061c54f33237fd4b78b6b636ae5c0c101bf427821766bafa7df48b2",
+  "scope": "Pure local code components only; no production integration or real email sending."
+}

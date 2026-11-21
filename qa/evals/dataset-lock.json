@@ -1,0 +1,11 @@
+{
+  "sha256": {
+    "downstream-contracts.json": "ba292dcdb3790a32bb7ffb85d721457480d7b1c92f9bd681d364229fde9a1a60",
+    "requests-a.json": "0de964810298a4ac08b06bda062dceb1381465350879e1de63ea5901a0f4e062",
+    "requests-b.json": "b34c2e7bbe92c8533f9d422f2f0818db76f403e5dfcafe91f96f071bce7a7873",
+    "rubric.json": "b836768ed1ee1bec14871f4f651bda7b178e9e01024393828d1e9e816cd8227d"
+  },
+  "cases": 12,
+  "paid_api_calls": 0,
+  "limits": "No inference-token telemetry; four fresh batch contexts rather than one context per case; no statistical generalization claim."
+}

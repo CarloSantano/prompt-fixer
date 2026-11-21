@@ -1,0 +1,14 @@
+{
+  "input_unchanged": true,
+  "transport": "ASCII-escaped JSON replay",
+  "expected": "Iki centro 15–25 min.",
+  "responses": {
+    "baseline": "Iki centro 15–25 min.",
+    "candidate": "Iki centro 15–25 min."
+  },
+  "passes": {
+    "baseline": true,
+    "candidate": true
+  },
+  "original_batch_issue": "Both original batch agents observed a hyphen in the terminal dump although the source had U+2013. Original results retained, not attributed to prompt quality."
+}

@@ -1,0 +1,4 @@
+{
+  "downstream_checks_sha256": "e8980cc1723d8e4de41a9f88e184b2fae35244478c9a3e0b852918c738161237",
+  "basis": "Original pre-candidate contracts; frozen before inspecting generated solutions."
+}

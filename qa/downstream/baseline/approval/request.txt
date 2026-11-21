@@ -1,0 +1,23 @@
+Implement prepare_send(record, approval) in solution.py using only Python's standard library. Deliver the complete code and a concise usage example, not a plan.
+
+This function only validates inputs and prepares a payload. Perform no I/O, network requests, or sending. Use no global state or third-party dependencies.
+
+Inputs are dictionaries. Validate record as follows:
+- tenant_id, message_id, recipient, and body must each be strings containing at least one non-whitespace character.
+- revision must be a nonnegative int; bool is invalid.
+
+Approval is valid only when:
+- approved is exactly True, not merely truthy.
+- It contains tenant_id, message_id, revision, recipient, and body matching the validated record exactly.
+- The matching fields have valid types; in particular, approval revision must not be bool or float even when Python equality would treat it as equal to an integer.
+
+For invalid input dictionaries, missing required fields, invalid record values, denied approval, or any approval mismatch, raise ValueError. Do not leak KeyError or TypeError for these validation failures. Extra fields do not affect the result.
+
+Return a new dictionary with exactly:
+- to: the original recipient string.
+- body: the original body string.
+- idempotency_key: a deterministic string derived from tenant_id, message_id, revision, recipient, and body.
+
+The key must be identical for identical approved inputs and different whenever any of those five values changes with matching new approval. Use an unambiguous deterministic encoding of all five values; avoid delimiter collisions and Python's randomized hash(). Preserve exact string values: checking whether a string is blank must not trim or normalize the returned payload, comparison values, or key inputs.
+
+Do not mutate either input dictionary, return either dictionary, or retain references to them. Before presenting the result, verify a valid revision-zero case, blank or missing fields, boolean revisions, truthy non-True approval, stale or cross-tenant approval, repeat-call determinism, changes to each key component, and unchanged inputs.

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "task_id": "replace-with-your-real-task",
+  "condition_id": "same-task-constraints-model-and-success-checks",
+  "synthetic": false,
+  "direct": {
+    "execution_model": "replace-with-exact-execution-model",
+    "passed": null,
+    "outcome_evidence": null,
+    "steps": [
+      {"stage": "execute", "input_tokens": null, "output_tokens": null}
+    ]
+  },
+  "fixed": {
+    "execution_model": "replace-with-exact-execution-model",
+    "passed": null,
+    "outcome_evidence": null,
+    "steps": [
+      {"stage": "fix", "input_tokens": null, "output_tokens": null},
+      {"stage": "execute", "input_tokens": null, "output_tokens": null}
+    ]
+  }
+}

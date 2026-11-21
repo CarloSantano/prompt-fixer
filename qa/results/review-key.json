@@ -1,0 +1,50 @@
+{
+  "R01": {
+    "A": "candidate",
+    "B": "baseline"
+  },
+  "R02": {
+    "A": "baseline",
+    "B": "candidate"
+  },
+  "R03": {
+    "A": "baseline",
+    "B": "candidate"
+  },
+  "R04": {
+    "A": "candidate",
+    "B": "baseline"
+  },
+  "R05": {
+    "A": "baseline",
+    "B": "candidate"
+  },
+  "R06": {
+    "A": "candidate",
+    "B": "baseline"
+  },
+  "R07": {
+    "A": "candidate",
+    "B": "baseline"
+  },
+  "R08": {
+    "A": "candidate",
+    "B": "baseline"
+  },
+  "R09": {
+    "A": "candidate",
+    "B": "baseline"
+  },
+  "R10": {
+    "A": "baseline",
+    "B": "candidate"
+  },
+  "R11": {
+    "A": "baseline",
+    "B": "candidate"
+  },
+  "R12": {
+    "A": "candidate",
+    "B": "baseline"
+  }
+}

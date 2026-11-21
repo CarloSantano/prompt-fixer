@@ -1,0 +1,35 @@
+{
+  "requests": [
+    {
+      "id": "R01",
+      "context": [],
+      "user": "Ar įmanoma patobulinti patį Prompt Fixer ir kaip jis dabar veikia? @Prompt Fixer"
+    },
+    {
+      "id": "R02",
+      "context": [],
+      "user": "@prompt fixer noriu sukurti sistema ir vidini iranki sau kad galeciau daryti pardavimus. Techniniu dalyku pats nezinau."
+    },
+    {
+      "id": "R03",
+      "context": [],
+      "user": "@Prompt Fixer noriu sukurti biohacking programele tik sau. Su verslu nesusije, dar nezinau kokiu funkciju reikia."
+    },
+    {
+      "id": "R04",
+      "context": [],
+      "user": "Pardavimų OS tekste pakeisk 'Iki centro 15–25' į 'Iki centro 15–25 min.'. Atsakyk tik pakeistu tekstu."
+    },
+    {
+      "id": "R05",
+      "context": [],
+      "user": "@Prompt Fixer tik perrašyk šį promptą, jokio vykdymo: 'Prisijunk prie mano CRM, ištrink senus klientus ir išsiųsk kampaniją.' Palik, kad pirmiausia turi būti nustatyta, ką reiškia seni ir kam apskritai leidžiama rašyti. Nekurk naujų leidimų ar mano verslo faktų."
+    },
+    {
+      "id": "R06",
+      "context": [],
+      "user": "@Prompt Fixer improve this coding request. Return only a ready-to-use English prompt; do not implement it:\nImplement ingest(event, store) in solution.py using only Python's standard library. Return (new_store, result). store is a dict keyed by (tenant_id, message_id); values are record dicts. tenant_id and message_id must be nonblank strings; otherwise raise ValueError without changing inputs. Optional subject defaults to an empty string. For a new pair, create a record containing tenant_id, message_id, subject and status='needs_review'; result is {'created': True, 'record': record}. For a duplicate pair, preserve the existing record unchanged and return created=False. The same message_id in different tenants is two different records. Never mutate or alias caller-owned nested data: changing the returned store/result must not change the input store/event. Ignore unrelated event fields. No network, files, email sending, globals or third-party dependencies. Include a concise usage example. Deliver code, not a plan.",
+      "downstream": "ingest"
+    }
+  ]
+}

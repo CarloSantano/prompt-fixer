@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Carlo Santo v3.0"
+  },
+  "description": "Resolve intent, compile context-aware prompts and direct builders toward checked delivery with less wasted context, questioning and rework.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Paversk mano laisvai parašytą mintį tikslingu darbu: parink vaidmenį, kontekstą, klausimus ir sėkmės patikrą.",
+          "Padėk išgryninti, ką iš tikrųjų noriu sukurti, ir pradėk nuo svarbiausio žingsnio.",
+          "Peržiūrėk šią užduotį: ar teisingas tikslas, darbo būdas ir rezultato patikra?"
+        ],
+        "developerName": "Carlo Santo v3.0",
+        "displayName": "Prompt Fixer",
+        "longDescription": "Prompt Fixer padeda laisvai parašytą mintį paversti tikslingu promptu arba vykdomu darbu. Pirmiausia atskiria klausimą, prompto perrašymą ir vykdymą. Išsaugo kontekstą, reikalavimus ir ambiciją, parenka naudingą atsakomybę bei metodus. Vibecoderiams padeda rinktis tinkamą techninį kelią, pristatyti naudojamą rezultatą ir sustoti pasiekus sutartą kokybę. Taupo kontekstą ir dėmesį vengdamas kartojimosi; faktinės tokenų ar pajamų naudos nežada be matavimo. Pritaikomas verslo ir asmeninėms užduotims. Aiškus @Prompt Fixer su padrika užduotimi pateikia pagerintą promptą; vykdo paprašius. Automatinis parinkimas priklauso nuo aplinkos.",
+        "shortDescription": "Nuo minties iki aiškaus darbo"
+      }
+    }
+  },
+  "name": "prompt-fixer",
+  "version": "0.7.0",
+  "repository": "https://github.com/CarloSantano/prompt-fixer",
+  "homepage": "https://github.com/CarloSantano/prompt-fixer#readme",
+  "license": "MIT"
+}

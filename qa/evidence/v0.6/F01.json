@@ -1,0 +1,28 @@
+{
+  "id": "F01",
+  "executor": "pf06_fresh_rewrite",
+  "fresh_context": true,
+  "request": "@Prompt Fixer sukurk man programėlę klientų užklausoms tvarkyti, techninius dalykus pasirink pats.",
+  "opened_resources": [
+    "README.md",
+    "installed:skills/prompt-fixer/SKILL.md",
+    "installed:skills/prompt-fixer/references/build-routing.md",
+    "installed:skills/prompt-fixer/references/questions-and-context.md"
+  ],
+  "response": "Sukurk man praktiškai naudojamą programėlę klientų užklausoms tvarkyti. Techninius sprendimus pasirink pats pagal tinkamumą, kokybę, sukūrimo greitį ir bendrą naudojimo bei palaikymo kainą.\n\nPirmiausia patikrink prieinamą projektą ir turimą kontekstą. Jei darbo eiga neaiški, paprašyk apibūdinti vieną realią užklausą: kaip ji gaunama, kas ją tvarko ir kada laikoma užbaigta. Užduok tik klausimus, kurių atsakymai keistų funkcijas, integracijas, prieigos teises ar kainą. Techninių pasirinkimų neperduok man.\n\nĮvertink, ar geriausia pritaikyti esamą sprendimą, panaudoti palaikomus komponentus, ar kurti individualiai. Trumpai pagrįsk rekomendaciją ir tęsk įgyvendinimą. Nepridėk nepatvirtintų funkcijų kaip savaime suprantamų reikalavimų.\n\nPristatyk veikiančią sutartos darbo eigos versiją ir patikrink visą kelią nuo užklausos užregistravimo iki užbaigimo, įskaitant duomenų išsaugojimą bei reikalingas prieigos teises. Pateik aiškius paleidimo nurodymus ir atskirk, kas veikia, kas išbandyta ir ko dar trūksta kasdieniam naudojimui. Dėl naujų išlaidų ar viešo publikavimo gauk mano patvirtinimą.",
+  "observed": {
+    "mode": "rewrite_only",
+    "underlying_app_built": false,
+    "project_install": "0.6.0 installed into disposable project; 11 source files; doctor matched receipt",
+    "host_auto_discovery": "not tested"
+  },
+  "review": {
+    "passed": true,
+    "basis": "Returned a usable Lithuanian prompt; delegated technical choices, preserved scope and did not build the underlying app."
+  },
+  "version": "0.6.0",
+  "date": "2026-11-21",
+  "model": "inherited host model; exact identifier not surfaced",
+  "evaluation": "Parent architecture review against actual request; executor did not receive expected answer or rubric",
+  "limits": "One targeted response, one fresh context, same inherited model; not human validation, paired cost evidence or a field trial."
+}

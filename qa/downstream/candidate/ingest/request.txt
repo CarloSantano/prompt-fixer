@@ -1,0 +1,16 @@
+Implement `ingest(event, store)` in `solution.py` using only Python's standard library. Deliver code and a concise usage example, not a plan.
+
+Contract:
+
+- Return `(new_store, result)`.
+- `store` is a dict keyed by `(tenant_id, message_id)`, with record dicts as values.
+- Read `tenant_id`, `message_id`, and optional `subject` from `event`; ignore unrelated fields.
+- `tenant_id` and `message_id` must each be a string containing at least one non-whitespace character. Otherwise raise `ValueError` without changing either input. Use the supplied ID values as the key and record values; do not silently normalize them.
+- If `subject` is absent, use `''`.
+- For a new `(tenant_id, message_id)` pair, add a record containing `tenant_id`, `message_id`, `subject`, and `status='needs_review'`. Return `result = {'created': True, 'record': record}`.
+- For a duplicate pair, preserve the existing record's complete contents unchanged, regardless of the incoming subject. Return `result = {'created': False, 'record': record}` using a detached copy of that existing record.
+- The same `message_id` under different `tenant_id` values identifies separate records.
+- Never mutate either input or expose aliases to caller-owned mutable data, at any nesting depth. This applies to all existing records copied into `new_store`, the returned `result`, and any mutable value taken from `event`, including `subject`. Changing anything mutable reachable through either returned output must not change `store` or `event`. Sharing between the two returned outputs is allowed provided it does not alias caller-owned data.
+- The implementation must perform no network access, file I/O, or email sending, and must use no globals or third-party dependencies.
+
+Include a concise usage example with the implementation.

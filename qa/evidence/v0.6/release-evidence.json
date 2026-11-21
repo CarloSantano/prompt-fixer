@@ -1,0 +1,57 @@
+{
+  "version": "0.6.0",
+  "runtime_files": {
+    ".codex-plugin/plugin.json": "06e88741851922e6641f0bb0e3ba44278df578e4e5f67089d3a3cbe9e30da4ad",
+    "plugin.json": "8f0c79310f20b5ec311194720624b4429b000ece04591eea0c41650ea6a7c202",
+    "prompt_fixer/__init__.py": "df3b2c3f74ea102a628ff40f5d3465f61b5ee4e9a5bdc319f863353695f47251",
+    "prompt_fixer/__main__.py": "2070500709d1eaa69280b9b367caadfe9cca4f44765ff9e70e6bee638a53e735",
+    "prompt_fixer/install.py": "a81cd568e78f15bf5686168abb42610b30a427d9688ec8b00920a533ce2aef8b",
+    "prompt_fixer/measure.py": "98778d3c24278bd506c56d74641ac2d56f29b5aba0c6a925703ebce45fde293d",
+    "prompt_fixer/validation.py": "1f9f734d0aa8d1d29c26ff5c72ba5f6f16f2b7a8231fac495376722069f7da86",
+    "qa/downstream_checks.py": "bf6bfacf15d2a59b87aa57baf60a0bff7e5671ad0cbaea0ff59c8c8bdf97bb62",
+    "qa/evalkit.py": "ac6e00d2f12bcf4dc981ae3c7b98020a79ba9add927a9966aa5af2a39008d994",
+    "skills/prompt-fixer/SKILL.md": "f613d0ed3e14c5c0fd4047c125937bbb5baa0414d51d012217479aabe927fc42",
+    "skills/prompt-fixer/agents/openai.yaml": "f95e012c42b192163e993fc1f3dae8cfd84e0ce23127df9e9bfd3df45e185c8e",
+    "skills/prompt-fixer/references/build-routing.md": "197210cb52dc4f9c6c6b8f9111357f5f08d7f66de5e2e6a1f86f78ced8b62184",
+    "skills/prompt-fixer/references/feedback-and-resumption.md": "cf1da3d16e15d3aedc467b2f5ea7b10e839da29a363093af22b77c937a9ce174",
+    "skills/prompt-fixer/references/pattern-registry.md": "ffb45e04fdb82a5c20ca40d611092e0ab7ece9a2ac801db4342afd3e78f246d6",
+    "skills/prompt-fixer/references/prompt-contract.md": "af71888ed0b14af73b5274c748271c728f4f34d0ec1cf2fa7ab77fec6bc8be77",
+    "skills/prompt-fixer/references/questions-and-context.md": "4e6b0ea921eaf8f2095524bdf25604f8b9b91426816560d503b86c6e2def20e5",
+    "skills/prompt-fixer/references/research-notes.md": "0b03057d0483ff396040b4faa65156dacf9cb2c1c25ba8d47ddd596bccf21af6",
+    "skills/prompt-fixer/references/resource-and-finish.md": "4af0ab5694a9f187d447bc6d48893adefe5e46a32b29fd0d619cab954cb16d1b",
+    "skills/prompt-fixer/references/roles.md": "e580a08696a4b149a8899e082ddc81dd981f3b530bf87bf890128f775f0a7218",
+    "skills/prompt-fixer/references/work-vectors.md": "b33d16dc923772ffe685288e526436f5177d0fae41c7f54c768523dc6ebfe066",
+    "tests/test_qa.py": "12d612cc1dae08a393516b2f46afae58088eaacd05d6c18161da6b3ddbcd93e0",
+    "tests/test_tooling.py": "469eb1f21345a9b7d5f0ba6d87013bd22a6a5be6cb6a922471902131cb36a3f4"
+  },
+  "runtime_sha256": "5b71f4f8a2c28b991e68e06be6cdca99361c5926be5a94aa5dca0fb4b65d95ef",
+  "date": "2026-11-21",
+  "behavior_cases": [
+    {
+      "id": "F01",
+      "passed": true,
+      "evidence": "qa/evidence/v0.6/F01.json",
+      "evidence_sha256": "861b7d001a0f87b9f0089196a854f4e8d4c0055ff90a26b66a8ae18c109df97e"
+    },
+    {
+      "id": "F02",
+      "passed": true,
+      "evidence": "qa/evidence/v0.6/F02.json",
+      "evidence_sha256": "226283961148ae9c34e9adf2f773b4cd72bbb9cee434bf09a15a169571338871"
+    },
+    {
+      "id": "F03",
+      "passed": true,
+      "evidence": "qa/evidence/v0.6/F03.json",
+      "evidence_sha256": "f525709430c0c694d97083f7a07f20453d2e5825fb56910f03e784e3c93325d5"
+    },
+    {
+      "id": "F04",
+      "passed": true,
+      "evidence": "qa/evidence/v0.6/F04.json",
+      "evidence_sha256": "8cd17ebbbfb71ce86c91dc41b6a891a08914b5865ffee4d52d94fb564f19fa6d"
+    }
+  ],
+  "offline_evidence": "qa/evidence/v0.6/offline-checks.json",
+  "scope": "Four targeted fresh-context behavior checks on frozen source, same inherited host model; parent-reviewed; no human validation, host-autodiscovery guarantee or billed-token evidence."
+}

@@ -1,0 +1,46 @@
+{
+  "version": "0.7.0",
+  "date": "2026-11-21",
+  "origin": "Private account plugin source; original preserved separately",
+  "distribution": "First public GitHub source distribution",
+  "instruction_files_identical_to_evaluated_source": {
+    "skills/prompt-fixer/agents/openai.yaml": "effce74131c89af75b1b17c4b21eae0b84540e38379d146f6984c7a0ff3ab1e9",
+    "skills/prompt-fixer/references/build-routing.md": "197210cb52dc4f9c6c6b8f9111357f5f08d7f66de5e2e6a1f86f78ced8b62184",
+    "skills/prompt-fixer/references/feedback-and-resumption.md": "cf1da3d16e15d3aedc467b2f5ea7b10e839da29a363093af22b77c937a9ce174",
+    "skills/prompt-fixer/references/pattern-registry.md": "ffb45e04fdb82a5c20ca40d611092e0ab7ece9a2ac801db4342afd3e78f246d6",
+    "skills/prompt-fixer/references/prompt-contract.md": "af71888ed0b14af73b5274c748271c728f4f34d0ec1cf2fa7ab77fec6bc8be77",
+    "skills/prompt-fixer/references/questions-and-context.md": "4e6b0ea921eaf8f2095524bdf25604f8b9b91426816560d503b86c6e2def20e5",
+    "skills/prompt-fixer/references/research-notes.md": "0b03057d0483ff396040b4faa65156dacf9cb2c1c25ba8d47ddd596bccf21af6",
+    "skills/prompt-fixer/references/resource-and-finish.md": "4af0ab5694a9f187d447bc6d48893adefe5e46a32b29fd0d619cab954cb16d1b",
+    "skills/prompt-fixer/references/roles.md": "e580a08696a4b149a8899e082ddc81dd981f3b530bf87bf890128f775f0a7218",
+    "skills/prompt-fixer/references/work-vectors.md": "b33d16dc923772ffe685288e526436f5177d0fae41c7f54c768523dc6ebfe066",
+    "skills/prompt-fixer/SKILL.md": "ba4fe9e70229018e24fce8b59e532e5634f468a3144ce087512a79d715bdca46"
+  },
+  "publication_changes": [
+    {
+      "path": "plugin.json",
+      "before_sha256": "d9bafc382ce4527e14a0ab47d55fc36488db50a7c4c8daa3fe1363451d40ce1e",
+      "public_sha256": "7e88759f1b84f144f22256c0f6c145bba0528b7b0a80e3ac431371ba67a2aafb",
+      "change": "Remove private contact email; add public repository/license metadata where supported. Runtime instructions unchanged."
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "before_sha256": "825b44668301b6c43f653cdb5cbe32feb1c1fe8406b9dee7255c81134678b08c",
+      "public_sha256": "3d417f9d66362bea371fbbf3bf54c3da53410099a7c68e5444d65454fb02ab1f",
+      "change": "Remove private contact email; add public repository/license metadata where supported. Runtime instructions unchanged."
+    },
+    {
+      "path": "qa/evidence/v0.6/F02.json",
+      "before_sha256": "226283961148ae9c34e9adf2f773b4cd72bbb9cee434bf09a15a169571338871",
+      "public_sha256": "dd33ff3c56ec1e2b79e3a0b6ee3a6efb33f4e6dc18a3889a77e991730461275b",
+      "change": "Owner machine prefix replaced with <TEST_WORKSPACE>; task, results and artifact text retained. Original private record remains unchanged."
+    },
+    {
+      "path": "qa/evidence/v0.7/offline-checks.json",
+      "before_sha256": "6f0450758a85e61cfb75a08bb2947adfa6492a075c9a037988fe48adef40e5e8",
+      "public_sha256": "f7357d49e3754203fa0e897a371f540aae1b28beb27676db8fe1930d1d7c0db6",
+      "change": "Owner machine prefix replaced with <TEST_WORKSPACE>; task, results and artifact text retained. Original private record remains unchanged."
+    }
+  ],
+  "evidence_policy": "Original historical checksums are retained as historical identifiers. Two records have disclosed machine-path redactions; their before/public hashes are mapped here. Current V01-V03 requests and responses are unchanged. Public manifest changes do not constitute a new model run or new performance evidence."
+}

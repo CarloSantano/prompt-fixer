@@ -1,0 +1,54 @@
+{
+  "version": "0.7.0",
+  "runtime_files": {
+    ".codex-plugin/plugin.json": "a1fe83eefc35cb5092473a2a9f834bd26c162b3aa4aad6f620d07b95cd46dc28",
+    "plugin.json": "220655749335a8fd30a2da8ed7fa80c298fed50f728eecb10d797d0a8a00c7a6",
+    "prompt_fixer/__init__.py": "466089b6c36b2fdeb4305686068e311be9b95dadd1984178e9d0edb31da95439",
+    "prompt_fixer/__main__.py": "2070500709d1eaa69280b9b367caadfe9cca4f44765ff9e70e6bee638a53e735",
+    "prompt_fixer/install.py": "a81cd568e78f15bf5686168abb42610b30a427d9688ec8b00920a533ce2aef8b",
+    "prompt_fixer/measure.py": "98778d3c24278bd506c56d74641ac2d56f29b5aba0c6a925703ebce45fde293d",
+    "prompt_fixer/validation.py": "1f9f734d0aa8d1d29c26ff5c72ba5f6f16f2b7a8231fac495376722069f7da86",
+    "qa/downstream_checks.py": "bf6bfacf15d2a59b87aa57baf60a0bff7e5671ad0cbaea0ff59c8c8bdf97bb62",
+    "qa/evalkit.py": "ac6e00d2f12bcf4dc981ae3c7b98020a79ba9add927a9966aa5af2a39008d994",
+    "skills/prompt-fixer/SKILL.md": "ba4fe9e70229018e24fce8b59e532e5634f468a3144ce087512a79d715bdca46",
+    "skills/prompt-fixer/agents/openai.yaml": "f95e012c42b192163e993fc1f3dae8cfd84e0ce23127df9e9bfd3df45e185c8e",
+    "skills/prompt-fixer/references/build-routing.md": "197210cb52dc4f9c6c6b8f9111357f5f08d7f66de5e2e6a1f86f78ced8b62184",
+    "skills/prompt-fixer/references/feedback-and-resumption.md": "cf1da3d16e15d3aedc467b2f5ea7b10e839da29a363093af22b77c937a9ce174",
+    "skills/prompt-fixer/references/pattern-registry.md": "ffb45e04fdb82a5c20ca40d611092e0ab7ece9a2ac801db4342afd3e78f246d6",
+    "skills/prompt-fixer/references/prompt-contract.md": "af71888ed0b14af73b5274c748271c728f4f34d0ec1cf2fa7ab77fec6bc8be77",
+    "skills/prompt-fixer/references/questions-and-context.md": "4e6b0ea921eaf8f2095524bdf25604f8b9b91426816560d503b86c6e2def20e5",
+    "skills/prompt-fixer/references/research-notes.md": "0b03057d0483ff396040b4faa65156dacf9cb2c1c25ba8d47ddd596bccf21af6",
+    "skills/prompt-fixer/references/resource-and-finish.md": "4af0ab5694a9f187d447bc6d48893adefe5e46a32b29fd0d619cab954cb16d1b",
+    "skills/prompt-fixer/references/roles.md": "e580a08696a4b149a8899e082ddc81dd981f3b530bf87bf890128f775f0a7218",
+    "skills/prompt-fixer/references/work-vectors.md": "b33d16dc923772ffe685288e526436f5177d0fae41c7f54c768523dc6ebfe066",
+    "tests/test_qa.py": "12d612cc1dae08a393516b2f46afae58088eaacd05d6c18161da6b3ddbcd93e0",
+    "tests/test_tooling.py": "469eb1f21345a9b7d5f0ba6d87013bd22a6a5be6cb6a922471902131cb36a3f4"
+  },
+  "runtime_sha256": "d57dfbe9f50e0671bc5a2883b90607a25da21225246c9756bf18e89bcf436510",
+  "date": "2026-11-21",
+  "behavior_cases": [
+    {
+      "id": "V01",
+      "passed": true,
+      "evidence": "qa/evidence/v0.7/V01.json",
+      "evidence_sha256": "66363d2877ec6e587ab40c60a9278a6b8d08204d7a40d7cef5cac2c374e334c4"
+    },
+    {
+      "id": "V02",
+      "passed": true,
+      "evidence": "qa/evidence/v0.7/V02.json",
+      "evidence_sha256": "5d122e00884e0d22a3fb691063e6ca189a986c8c54066f684c98d79b04c503d4"
+    },
+    {
+      "id": "V03",
+      "passed": true,
+      "evidence": "qa/evidence/v0.7/V03.json",
+      "evidence_sha256": "8e3096dc22a8a0a8edf5d35088114c68c46eb7a3134d88e62ef7d972677675b9"
+    }
+  ],
+  "offline_evidence": "qa/evidence/v0.7/offline-checks.json",
+  "prior_release_evidence": "qa/evidence/v0.6/release-evidence.json",
+  "scope": "Three targeted fresh-context checks of visible comparison, prompt-only override and long-input excerpt. Parent-reviewed, same inherited host model. No human validation, token-saving or host-autodiscovery claim.",
+  "distribution_provenance": "qa/distribution-provenance.json",
+  "distribution_adaptation": "Public manifest metadata only; all evaluated instructions, helpers, tests and V01-V03 responses unchanged. No new model run claimed."
+}

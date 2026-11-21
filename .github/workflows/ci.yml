@@ -1,0 +1,36 @@
+name: Checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-checks:
+    name: Offline checks (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Unit and mutation-sensitive checks
+        run: python -B -m unittest discover -s tests -v
+      - name: Package and current-source evidence
+        run: python -B -m prompt_fixer check --evidence
+      - name: Current and historical regression gate
+        run: python -B qa/evalkit.py validate
+      - name: Generated component contracts
+        run: |
+          python -B qa/downstream_checks.py candidate ingest
+          python -B qa/downstream_checks.py candidate approval
+      - name: Portable release package
+        run: python -B tools/build_release.py

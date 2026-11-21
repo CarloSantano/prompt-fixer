@@ -1,0 +1,184 @@
+{
+  "reviews": [
+    {
+      "id": "R01",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Explains plugin behavior and improvement checks; explicitly says no instructions were changed and no access or persistent memory is created."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Explains rewrite versus execution and evidence-based improvements; makes no self-update or integration-access claim."
+      },
+      "preferred": "tie",
+      "reason": "Both answer the question about the plugin without substituting a replacement prompt or performing an update."
+    },
+    {
+      "id": "R02",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Ready-to-use prompt keeps buyer, offer, process and tools unknown; assigns technical choices and requires a real sales scenario check."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Ready-to-use prompt elicits business facts, delegates technical implementation, and checks the agreed workflow without preselecting tools."
+      },
+      "preferred": "tie",
+      "reason": "Both preserve the unknown business context and provide a usable path from needs to a checked sales system without starting the project."
+    },
+    {
+      "id": "R03",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Keeps the app personal and requirements open; explicitly treats health facts as unknown and separates tracking from unsupported medical conclusions."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Keeps personal use and uncertain features intact; sleep, energy and habits are clearly optional examples, with no monetization or validation pressure."
+      },
+      "preferred": "A",
+      "reason": "A adds relevant safeguards against inventing health facts or deriving unsupported health conclusions while preserving personal discovery and implementation."
+    },
+    {
+      "id": "R04",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Exactly the requested replacement text, with no additions."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Exactly the requested replacement text, with no additions."
+      },
+      "preferred": "tie",
+      "reason": "The outputs are identical and satisfy the exact-text contract."
+    },
+    {
+      "id": "R05",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Rewrites only; old-client criteria and permitted recipients remain unresolved, with concrete review lists and explicit action authorization required."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Rewrites only; preserves deletion and sending goals but conditions them on defined targets, existing access and explicit approval of concrete scope."
+      },
+      "preferred": "tie",
+      "reason": "Both preserve the intended CRM actions without executing them, inventing business facts, or treating this rewrite as permission."
+    },
+    {
+      "id": "R06",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "English prompt preserves identity, validation, duplicate contents, subject default, all-depth input isolation, restrictions and the usage example."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Preserves required behavior and deep isolation, but narrows new records to exactly four fields and adds a required assertion deliverable."
+      },
+      "preferred": "A",
+      "reason": "A preserves the original API latitude and deliverables; B adds an unnecessary exact-field restriction and testing-output requirement."
+    },
+    {
+      "id": "R07",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "One polite client-facing sentence about reviewing the Gmail-to-Sheets proposal; no sending or renewed intake."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "One polite client-facing sentence about the same proposal; no prompt rewrite or sending."
+      },
+      "preferred": "tie",
+      "reason": "Both execute the approved text-generation task and return only the requested client message."
+    },
+    {
+      "id": "R08",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Asks for the missing text or task without assuming an available target."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Requests the missing text or prompt without inventing content."
+      },
+      "preferred": "tie",
+      "reason": "Both appropriately clarify the absent object instead of fabricating a project or rewriting nonexistent text."
+    },
+    {
+      "id": "R09",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Retains all five-client requirements, full delivery, integration-safe permissions and acceptance checks; recipient binding of approval remains implicit."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Retains full scope and final-system slice; explicitly binds approval to recipient/content and checks the risky dependency and recovery behavior."
+      },
+      "preferred": "B",
+      "reason": "B makes approval invalidation and early dependency validation more concrete while retaining the complete delivery goal and an open technical choice."
+    },
+    {
+      "id": "R10",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Corrects Poland to false, preserves source-only evaluation and exactly two typed JSON fields, and treats email instructions as data."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Corrects Poland to false, retains the two-field JSON and source limits, and rejects embedded instructions as eligibility evidence."
+      },
+      "preferred": "tie",
+      "reason": "Both resolve the contradictory example in favor of the established Lithuania-only rules and preserve the full classification contract."
+    },
+    {
+      "id": "R11",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Standalone English prompt is 115 words and preserves offline stdlib CLI constraints; adds blank-status policy, exit-code behavior and a required check."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Standalone English prompt is 82 words and preserves CSV status counts, runnable deliverable, local-only constraints and no prohibited features."
+      },
+      "preferred": "B",
+      "reason": "B carries the agreed task into a complete standalone prompt with fewer unrequested behavioral and deliverable commitments."
+    },
+    {
+      "id": "R12",
+      "A": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "English prompt preserves exact approved-version matching, strict True and non-bool integer validation, deterministic five-field key, no I/O and no input aliases."
+      },
+      "B": {
+        "mode_pass": true,
+        "requirements_pass": true,
+        "note": "Preserves the same contract, explicitly excludes float/bool approval revisions and adds relevant validation and determinism checks without implementing."
+      },
+      "preferred": "tie",
+      "reason": "Both preserve the strict approval and payload contract; B's extra checks are relevant but do not establish a material overall advantage."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "F04",
+  "executor": "pf06_fresh_question",
+  "fresh_context": true,
+  "request": "@Prompt Fixer ar šitam reikia atskiro backend serverio ir API rakto?",
+  "opened_resources": [
+    "skills/prompt-fixer/SKILL.md",
+    "README.md"
+  ],
+  "response": "Ne — šiam „Prompt Fixer“ **atskiro backend serverio ir API rakto nereikia**. Jis veikia kaip instrukcijų sluoksnis tavo naudojamame AI asistente ir pats papildomų modelio užklausų nesiunčia.\n\nGalioja tik pasirinktos AI platformos prieiga, naudojimo limitai ir įprasti jos kaštai.",
+  "observed": {
+    "mode": "direct_answer",
+    "source_changed": false
+  },
+  "review": {
+    "passed": true,
+    "basis": "Answered the plugin question with correct implementation limits; did not rewrite it or change source."
+  },
+  "version": "0.6.0",
+  "date": "2026-11-21",
+  "model": "inherited host model; exact identifier not surfaced",
+  "evaluation": "Parent architecture review against actual request; executor did not receive expected answer or rubric",
+  "limits": "One targeted response, one fresh context, same inherited model; not human validation, paired cost evidence or a field trial."
+}

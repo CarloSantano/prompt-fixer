@@ -1,0 +1,16 @@
+Implement prepare_send(record, approval) in solution.py using only Python's standard library. Deliver the code and a concise usage example, not a plan.
+
+The function prepares a payload only. It must perform no I/O, network access, or sending, use no global state or third-party dependencies, and must not mutate either input dictionary or return an alias to one.
+
+Validation:
+- record must contain tenant_id, message_id, recipient, and body as nonblank strings, plus revision as a nonnegative int, explicitly excluding bool.
+- approval must contain approved with the value exactly True, not merely a truthy value, and tenant_id, message_id, revision, recipient, and body matching the record exactly. Approval revision must also be an int excluding bool; True must not match revision 1.
+- Missing or invalid required fields, denied approval, or any mismatch must raise ValueError.
+- Check strings for nonblank content without trimming or normalizing the values used for matching, output, or key generation.
+
+Return a fresh dictionary containing exactly:
+- to: record's recipient
+- body: record's body
+- idempotency_key: a deterministic string derived from tenant_id, message_id, revision, recipient, and body
+
+Identical approved inputs must produce the same key. Changing any one of those five fields with a matching new approval must change the key. Encode field boundaries unambiguously; do not use Python's randomized hash() or ambiguous string concatenation. Return only independent scalar values in the new dictionary, with no mutable input aliases.

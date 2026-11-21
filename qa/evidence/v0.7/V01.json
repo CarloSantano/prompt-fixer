@@ -1,0 +1,19 @@
+{
+  "id": "V01",
+  "executor": "pf07_visible_personal",
+  "request": "@Prompt Fixer noriu sukurti biohacking programele sau",
+  "opened_resources": [
+    "skills/prompt-fixer/SKILL.md"
+  ],
+  "response": "Tik patikslinu užklausą.\n\n**Tavo užklausa**\n\n> @Prompt Fixer noriu sukurti biohacking programele sau\n\n**Patobulintas promptas**\n\n```text\nPadėk man sukurti biohacking programėlę asmeniniam naudojimui.\n\nPirmiausia keliais svarbiausiais klausimais išsiaiškink, ką man reiškia biohacking, kokio rezultato siekiu, kokius duomenis galėčiau rinkti ir kokiame įrenginyje naudosiu programėlę. Nepriskirk man funkcijų ar poreikių, kurių nepaminėjau.\n\nPagal atsakymus pasiūlyk tinkamą programėlės apimtį, pagrindinį naudojimo scenarijų ir technologinį sprendimą. Paaiškink pasirinkimus pagal patogumą, kūrimo kainą ir priežiūrą. Atsižvelk į sveikatos duomenų privatumą, o sveikatos rekomendacijas grįsk patikimais šaltiniais.\n\nKai kryptis aiški, padėk sukurti veikiančią programėlę ir patikrinti pagrindines funkcijas mano naudojamame įrenginyje. Techninius sprendimus paaiškink suprantamai, kad kurdamas kartu mokyčiausi.\n```\n\n**Kas pakeista**\n\nPridėtas kelias nuo tavo asmeninio tikslo iki naudojamos programėlės, iš anksto neprimetant funkcijų ar technologijų.",
+  "review": {
+    "passed": true,
+    "basis": "Exact original draft shown, copyable improved prompt, one-line observable change summary and rewrite status. No app built or business frame forced."
+  },
+  "version": "0.7.0",
+  "fresh_context": true,
+  "date": "2026-11-21",
+  "model": "inherited host model; exact identifier not surfaced",
+  "evaluation": "Parent review of actual output; expected answers and rubric withheld from executors",
+  "limits": "One response in a fresh context; not human validation or measured cost/outcome improvement"
+}

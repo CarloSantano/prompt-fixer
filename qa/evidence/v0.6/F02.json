@@ -1,0 +1,24 @@
+{
+  "id": "F02",
+  "executor": "pf06_fresh_execute",
+  "fresh_context": true,
+  "request": "@Prompt Fixer pagerink ir vykdyk dabar: sukurk man work/prompt-fixer-grill-20261121/forward-execute/todo.md su trimis darbais rytojui: pakalbinti vieną potencialų klientą; parodyti veikiančią demo; užrašyti gautą feedbacką.",
+  "opened_resources": [
+    "skills/prompt-fixer/SKILL.md"
+  ],
+  "response": "Sukūriau [todo.md](sandbox:/<TEST_WORKSPACE>/work/prompt-fixer-grill-20261121/forward-execute/todo.md) su trimis darbais rytojui, lapkričio 22 d.",
+  "observed": {
+    "mode": "execute",
+    "artifact_content": "# Rytojaus darbai — 2026-11-22\n\n- [ ] Pakalbinti vieną potencialų klientą.\n- [ ] Parodyti veikiančią demo.\n- [ ] Užrašyti gautą feedbacką.\n",
+    "artifact_read_back_by_parent": true
+  },
+  "review": {
+    "passed": true,
+    "basis": "Actual requested file created and read back; exactly three task items, correct tomorrow date and Unicode."
+  },
+  "version": "0.6.0",
+  "date": "2026-11-21",
+  "model": "inherited host model; exact identifier not surfaced",
+  "evaluation": "Parent architecture review against actual request; executor did not receive expected answer or rubric",
+  "limits": "One targeted response, one fresh context, same inherited model; not human validation, paired cost evidence or a field trial."
+}

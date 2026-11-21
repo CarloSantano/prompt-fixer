@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prompt Fixer"
+  short_description: "Išgrynina tikslą, vaidmenį ir darbo eigą"
+  default_prompt: "Naudok $prompt-fixer mano minčiai paversti tikslingu darbu, parinkdamas vaidmenį, kontekstą ir patikrą."
+policy:
+  allow_implicit_invocation: true
+

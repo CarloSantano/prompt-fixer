@@ -1,0 +1,26 @@
+Implement `ingest(event, store)` in `solution.py` using only Python's standard library. Deliver the implementation and a concise usage example, not a plan.
+
+Interface and data:
+
+- Return a tuple `(new_store, result)`.
+- `event` supplies `tenant_id`, `message_id`, and optionally `subject`.
+- `store` is a dictionary keyed by `(tenant_id, message_id)`. Its values are record dictionaries.
+
+Required behavior:
+
+1. Validate both identifiers. Each must be a string containing at least one non-whitespace character. A missing, non-string, empty, or whitespace-only identifier must raise `ValueError` without changing either input. Preserve valid identifiers as supplied; do not trim or normalize them.
+2. Use the pair `(tenant_id, message_id)` as the identity. The same `message_id` in different tenants represents different records.
+3. For a new pair, create a record with exactly these fields: `tenant_id`, `message_id`, `subject`, and `status`. Default `subject` to `''` only when the field is absent; otherwise preserve its supplied value without additional coercion. Set `status` to `'needs_review'`. Add the record to `new_store` and return `{'created': True, 'record': record}` as `result`.
+4. For an existing pair, preserve all existing record contents unchanged, including nested values and any additional fields. Ignore incoming replacements such as a new subject. Return `{'created': False, 'record': existing_record_copy}` as `result`, with the existing record retained in `new_store`.
+5. Preserve every unrelated entry in the returned store. Ignore unrelated event fields.
+
+Ownership and side effects:
+
+- Never mutate `event`, `store`, or anything nested inside either input.
+- Neither returned object may share caller-owned mutable nested data with the inputs. Mutating any nested data reachable through `new_store` or `result` must leave both inputs unchanged. This applies to newly created subjects, duplicate records, and unrelated existing store entries.
+- Use independent deep copies where required. Preserving an existing record means preserving its contents, not its object identity.
+- Do not use network access, file I/O, email sending, global state, or third-party dependencies.
+
+Verify the implementation with concise assertions covering creation, duplicates, identical message IDs in different tenants, invalid identifiers, a missing subject, ignored unrelated fields, and nested mutation isolation for both returned objects. Include at least one duplicate whose incoming subject differs from the stored subject. Keep all examples local and deterministic.
+
+Return the complete `solution.py` code, followed by a concise usage example.

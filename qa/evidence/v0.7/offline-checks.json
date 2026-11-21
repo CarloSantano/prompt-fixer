@@ -1,0 +1,58 @@
+{
+  "version": "0.7.0",
+  "date": "2026-11-21",
+  "runtime_sha256": "8b90fdc35f09dfd5b53c5c817a25928ff22d590c6e01b5136010395deb057d20",
+  "unit_command": "python -B -X utf8 -m unittest discover -s tests -q",
+  "unit_result": {
+    "tests_run": 42,
+    "passed": 41,
+    "skipped": 1,
+    "failed": 0,
+    "skip_reason": "Host does not permit directory symlinks",
+    "reported_seconds": 2.42
+  },
+  "actual_project_update_and_doctor": [
+    {
+      "command": "-m prompt_fixer install --host codex --project '<TEST_WORKSPACE>\\work\\prompt-fixer-grill-20261121\\onboarding-project' --replace",
+      "result": {
+        "status": "installed",
+        "host": "codex",
+        "target": "<TEST_WORKSPACE>\\work\\prompt-fixer-grill-20261121\\onboarding-project\\.agents\\skills\\prompt-fixer",
+        "version": "0.7.0",
+        "files": 11,
+        "scope": "project only; no host permissions or global settings changed",
+        "activation": "File layout verified; host discovery must be checked in the target host.",
+        "backup": "<TEST_WORKSPACE>\\work\\prompt-fixer-grill-20261121\\onboarding-project\\.prompt-fixer\\backups\\codex-20261121T114921961846Z"
+      }
+    },
+    {
+      "command": "-m prompt_fixer doctor --host codex --project '<TEST_WORKSPACE>\\work\\prompt-fixer-grill-20261121\\onboarding-project'",
+      "result": {
+        "status": "managed_files_match_receipt",
+        "host": "codex",
+        "version": "0.7.0",
+        "target": "<TEST_WORKSPACE>\\work\\prompt-fixer-grill-20261121\\onboarding-project\\.agents\\skills\\prompt-fixer",
+        "skill": {
+          "name": "prompt-fixer",
+          "files": 12,
+          "links_checked": 13,
+          "body_words": 817
+        },
+        "limit": "This checks files, not model behavior or automatic host discovery."
+      }
+    }
+  ],
+  "components": {
+    "checks_passed": 64,
+    "evidence": "qa/evidence/v0.6/offline-checks.json",
+    "rerun_for_0_7": false,
+    "basis": "Component source and evaluator unchanged from the observed 0.6 run; SHA-256 checked."
+  },
+  "runtime_changes_since_0_6": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/prompt-fixer/SKILL.md",
+    "prompt_fixer/__init__.py"
+  ],
+  "limits": "Offline checks and a disposable project install, not external host discovery or production integrations."
+}

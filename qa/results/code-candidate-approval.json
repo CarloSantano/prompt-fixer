@@ -1,0 +1,11 @@
+{
+  "variant": "candidate",
+  "task": "approval",
+  "tests_run": 16,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "details": "test_approval_revision_bool_does_not_match_int (__main__.ApprovalContract.test_approval_revision_bool_does_not_match_int) ... ok\ntest_approved_is_strict_true (__main__.ApprovalContract.test_approved_is_strict_true) ... ok\ntest_approved_payload (__main__.ApprovalContract.test_approved_payload) ... ok\ntest_each_field_mismatch_rejected (__main__.ApprovalContract.test_each_field_mismatch_rejected) ... ok\ntest_failed_validation_does_not_change_inputs (__main__.ApprovalContract.test_failed_validation_does_not_change_inputs) ... ok\ntest_inputs_not_mutated (__main__.ApprovalContract.test_inputs_not_mutated) ... ok\ntest_invalid_record_revision_rejected (__main__.ApprovalContract.test_invalid_record_revision_rejected) ... ok\ntest_invalid_record_strings_rejected (__main__.ApprovalContract.test_invalid_record_strings_rejected) ... ok\ntest_key_covers_every_approved_field (__main__.ApprovalContract.test_key_covers_every_approved_field) ... ok\ntest_key_is_deterministic (__main__.ApprovalContract.test_key_is_deterministic) ... ok\ntest_key_stable_across_process_hash_seeds (__main__.ApprovalContract.test_key_stable_across_process_hash_seeds) ... ok\ntest_missing_approval_fields_rejected (__main__.ApprovalContract.test_missing_approval_fields_rejected) ... ok\ntest_missing_approval_flag (__main__.ApprovalContract.test_missing_approval_flag) ... ok\ntest_missing_record_fields_rejected (__main__.ApprovalContract.test_missing_record_fields_rejected) ... ok\ntest_no_function_stdout (__main__.ApprovalContract.test_no_function_stdout) ... ok\ntest_zero_revision_valid (__main__.ApprovalContract.test_zero_revision_valid) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.221s\n\nOK\n",
+  "solution_sha256": "dc9a17df86f220d9ffbd94146d7e0902f8ee4cf1e0844f4be99934c70183ea1a",
+  "scope": "Pure local code components only; no production integration or real email sending."
+}
